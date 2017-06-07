@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.root.timetable.TimeTableSetup">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Select Branch"
+         android:textSize="20sp"
+         android:textStyle="bold"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_branch_id"
+        android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Year"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_year_id"
+        android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Division"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_division_id"
+        android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Staff"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_staff_id"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Sem"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_sem_id"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Subject"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <Spinner android:id="@+id/spinner_subject_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10sp"/>
+
+
+        <HorizontalScrollView
+            android:layout_width="320dp"
+            android:layout_height="240dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="85dp">
+
+            <TableLayout
+                android:layout_width="368dp"
+                android:layout_height="240dp"
+                android:id="@+id/time_table_table"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="436dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time/Days  "
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Monday"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tuesday"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wednesday"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thursday"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Friday"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Saturday"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TimeSlot1"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox android:text="Slot_1_1" />
+
+                    <CheckBox android:text="Slot_1_2" />
+
+                    <CheckBox android:text="Slot_1_3" />
+
+                    <CheckBox android:text="Slot_1_4" />
+
+                    <CheckBox android:text="Slot_1_5" />
+
+                    <CheckBox android:text="Slot_1_6" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TimeSlot2"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox android:text="Slot_2_1" />
+
+                    <CheckBox android:text="Slot_2_2" />
+
+                    <CheckBox android:text="Slot_2_3" />
+
+                    <CheckBox android:text="Slot_2_4" />
+
+                    <CheckBox android:text="Slot_2_5" />
+
+                    <CheckBox android:text="Slot_2_6" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TimeSlot2"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox android:text="Slot_2_1" />
+
+                    <CheckBox android:text="Slot_2_2" />
+
+                    <CheckBox android:text="Slot_2_3" />
+
+                    <CheckBox android:text="Slot_2_4" />
+
+                    <CheckBox android:text="Slot_2_5" />
+
+                    <CheckBox android:text="Slot_2_6" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TimeSlot3"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox android:text="Slot_3_1" />
+
+                    <CheckBox android:text="Slot_3_2" />
+
+                    <CheckBox android:text="Slot_3_3" />
+
+                    <CheckBox android:text="Slot_3_4" />
+
+                    <CheckBox android:text="Slot_3_5" />
+
+                    <CheckBox android:text="Slot_3_6" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TimeSlot4"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox android:text="Slot_4_1" />
+
+                    <CheckBox android:text="Slot_4_2" />
+
+                    <CheckBox android:text="Slot_4_3" />
+
+                    <CheckBox android:text="Slot_4_4" />
+
+                    <CheckBox android:text="Slot_4_5" />
+
+                    <CheckBox android:text="Slot_4_6" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TimeSlot5"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox android:text="Slot_5_1" />
+
+                    <CheckBox android:text="Slot_5_2" />
+
+                    <CheckBox android:text="Slot_5_3" />
+
+                    <CheckBox android:text="Slot_5_4" />
+
+                    <CheckBox android:text="Slot_5_5" />
+
+                    <CheckBox android:text="Slot_5_6" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TimeSlot6"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox android:text="Slot_6_1" />
+
+                    <CheckBox android:text="Slot_6_2" />
+
+                    <CheckBox android:text="Slot_6_3" />
+
+                    <CheckBox android:text="Slot_6_4" />
+
+                    <CheckBox android:text="Slot_6_5" />
+
+                    <CheckBox android:text="Slot_6_6" />
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+
+
+        <Button
+            android:layout_width="375sp"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/save_Checkbox"
+            android:onClick="finalize"/>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
